@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'DosisSemiBold';
+    src: url('dosis-semibold.eot');
+    src: url('dosis-semibold.eot') format('embedded-opentype'),
+         url('dosis-semibold.woff') format('woff'),
+         url('dosis-semibold.ttf') format('truetype'),
+         url('dosis-semibold.svg#DosisSemiBold') format('svg');
+}
