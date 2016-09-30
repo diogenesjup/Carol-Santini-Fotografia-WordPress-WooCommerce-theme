@@ -45,7 +45,9 @@
 <div class="container destaques-home">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-1">
-      <img src="<?php the_field("imagem_de_destaque_a_esquerda"); ?>" alt="imagem">
+      <a href="http://www.carolsantini.com.br/shop/" title="Clique para ir para a sessão de produtos">
+        <img src="<?php the_field("imagem_de_destaque_a_esquerda"); ?>" alt="imagem">
+      </a>  
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-2">
       <?php the_field("texto_de_destaque_a_direita"); ?>
@@ -59,13 +61,13 @@
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="caixa-newsletter">
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 coluna-1">
-          <p>Coloque seu email ao lado para <b>GANHAR</b> UM EBOOK com <u>6 dicas para decorar paredes com quadros</u> e ficar por dentro das novidades.</p>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-1">
+          <p style="line-height:1.4em;">Coloque seu email ao lado para <b>GANHAR</b> UM EBOOK com <u>6 dicas para decorar paredes com quadros</u> e ficar por dentro das novidades.</p>
         </div>
         <div class="col-lg-1 col-md-1 hidden-sm hidden-xs coluna-2">
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow.jpg" alt="arrow">
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 coluna-3">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 coluna-3">
           <form id="register-newsletter" class="form-inline">
               <div class="form-group">
                          <input type="email" name="newsletter" class="form-control" required placeholder="Digite seu endereço de e-mail">
@@ -88,11 +90,11 @@
 <div class="container chamadas-categorias">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2>CATEGORIAS</h2>
+        <h2>MAIS VENDIDOS</h2>
       </div>
     </div>
 
-  <div class="row">
+  <div class="row" style="display:none !important;">
     
    <?php
           // LISTAR TODAS AS CATEGORIAS DE PRODUTOS
@@ -121,6 +123,11 @@
 
    ?>
 
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <?php echo do_shortcode('[recent_products per_page="4" columns="4"]'); ?>
+    </div>
   </div>
 </div>
 <!-- CHAMADAS CATEGORIAS -->

@@ -54,18 +54,24 @@ $menu_items = wp_get_nav_menu_items("footer");
 
                </div>
                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-2">
+
+               <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
                 <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-               <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+               
                <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+
+
                </div>
           </div>
      </div>
 </footer>
 <!-- RODAPE -->
-
-    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-2.1.4.js"></script>
+    
+    <?php if(!is_page("finalizar-compra")): ?>
+    
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/bootstrap.min.js"></script>                                  
-    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/s/scripts.js"></script>  
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>  
 
      <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/sweetalert2.min.js"></script> 
      <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/wow.min.js"></script>
@@ -91,6 +97,7 @@ $menu_items = wp_get_nav_menu_items("footer");
       
     });    
     </script>
+    <?php endif; ?>
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <?php wp_footer(); ?>

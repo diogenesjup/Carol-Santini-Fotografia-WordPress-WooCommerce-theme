@@ -9,6 +9,16 @@
           </div>
      </div>
 </div>
+<div class="container">
+     <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 breadcrumb-d" typeof="BreadcrumbList" vocab="http://schema.org/">
+               <?php if(function_exists('bcn_display')){
+                       bcn_display();
+                     }
+               ?>
+          </div>
+     </div>
+</div>
 <!-- BREADCRUMB -->
 
 

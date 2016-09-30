@@ -6,8 +6,18 @@
      <div class="container">
           <div class="row">
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                    <h2><?php if(is_page()): woocommerce_page_title(); endif; if(is_archive()): echo "<small style='color:#fff;'>categoria: </small>";woocommerce_page_title(); endif; if(!is_archive() && !is_page()): the_title(); endif; ?></h2>
+                    <h2><?php if(is_page()): woocommerce_page_title(); endif; if(is_archive()): woocommerce_page_title(); endif; if(!is_archive() && !is_page()): the_title(); endif; ?></h2>
                </div>
+          </div>
+     </div>
+</div>
+<div class="container">
+     <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 breadcrumb-d" typeof="BreadcrumbList" vocab="http://schema.org/">
+               <?php if(function_exists('bcn_display')){
+                       bcn_display();
+                     }
+               ?>
           </div>
      </div>
 </div>

@@ -9,7 +9,7 @@
           <div class="container">
                <div class="eight columns"  data-animated="fadeInUp">
                     <h1 class="notranslate"><?php echo single_cat_title(); ?></h1>
-                    <p class="notranslate">Arquivos da categoria <?php echo single_cat_title(); ?></p>
+                    <p class="notranslate"><?php echo single_cat_title(); ?></p>
                </div>
                <div class="eight columns">
                     <nav id="breadcrumbs">

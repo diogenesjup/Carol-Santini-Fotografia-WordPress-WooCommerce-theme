@@ -40,7 +40,7 @@ body{
 
 
 header{
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .logo img{
     max-width: 100%;
@@ -51,7 +51,7 @@ header{
 .menu-desktop{
     text-align: right;
     color:#666;
-    font-size: 1.12em;
+    font-size: 1em;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
@@ -61,14 +61,33 @@ header{
     padding-left: 10px;
 }
 .menu-desktop a{
-    color:#666;
+    color:#a4a4a4;
     text-decoration: none;
     padding-left: 13px;
 }
 
 
+.menu-desktop a.facebook:hover{
+   color:#3b5999 !important;
+   -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+}
+.menu-desktop a.instagram:hover{
+    color:#305c85 !important;
+    -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+}
+.menu-desktop a.pinterest:hover{
+    color:#d83b38 !important;
+    -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+}
+
+.menu-desktop a.carrinho:hover{
+    color:#f856a2 !important;
+    -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+}
+
+
 .slideshow{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
@@ -91,11 +110,11 @@ header{
     width: 10px !important;
     height: 10px !important;
     margin-right: 14px !important;
-    background: #efefef !important;
+    background: #ccc !important;
     border-radius: 100px !important;
   }
   .owl-page.active{
-    background: #ccc !important;
+    background: #eb839e !important;
   }
 
 
@@ -145,7 +164,7 @@ p{
 }
 .newsletter .coluna-2{
     text-align: center;
-    padding-top: 15.5px;
+    padding-top: 24.5px;
 }
 .newsletter .coluna-2 img{
     max-width: 100%;
@@ -172,14 +191,15 @@ p{
   text-transform: uppercase;
   font-weight: 400;
   color:#f856a2;
+  margin-bottom: 0px !important;
 }
 
 .caixa-categoria{
     position: relative;
     top:0;
-    left:0;
+    left:0%;
     width: 100%;
-    height: 200px;
+    height: 290px;
     margin-bottom: 25px;
     margin-top: 25px;
     cursor: pointer;
@@ -194,7 +214,7 @@ p{
 
 .formas-de-pagamento{
     position: relative;
-    margin-top: 80px;
+    margin-top: 40px;
     background: #dbdbd9;
     text-align: center;
     min-height: 100px;
@@ -216,6 +236,7 @@ footer{
 
 footer .coluna-1{
     text-align: left;
+    font-size: 0.9em;
 }
 
 footer .coluna-2{
@@ -252,6 +273,58 @@ footer .coluna-2 a i{
 }
 
 
+footer .coluna-2 a i.fa-facebook:hover{
+   background:#3b5999 !important;
+   -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+   color:#fff;
+}
+
+footer .coluna-2 a i.fa-instagram:hover{
+    background:#305c85 !important;
+    -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+    color:#fff;
+}
+
+footer .coluna-2 a i.fa-pinterest-p:hover{
+    background:#d83b38 !important;
+    -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BRADCRUMB */
+.breadcrumb-d{
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color:#666 !important;
+}
+.breadcrumb-d a,.breadcrumb-d * a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color:#666 !important;
+
+}
+/* BRADCRUMB */
+
+
+
 .breadcrumb-paginas{
     position: relative;
     top:30px;
@@ -265,7 +338,7 @@ footer .coluna-2 a i{
 }
 
 .breadcrumb-paginas h2{
-    color:#fff;
+    color:#ffeefe;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -274,7 +347,7 @@ footer .coluna-2 a i{
 
 
 .work{
-    margin-top: 100px;
+    margin-top: 30px;
     margin-bottom: 40px;
     min-height: 350px;
 }
@@ -535,3 +608,5 @@ font-weight: 700 !important;
     margin-top: 20px !important;
         
 }
+
+

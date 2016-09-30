@@ -40,7 +40,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.css" media="all" />                   
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css" />
-<link rel="stylesheet" type="text/css" media="(max-width: 900px)" href="css/mobile.css" />
+<link rel="stylesheet" type="text/css" media="(max-width: 900px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/mobile.css" />
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/sweetalert2.min.css">    
 <!-- ICONES -->
@@ -55,9 +55,19 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 
 <?php wp_head(); ?>
 
+<?php if(!is_front_page()): ?> 
+  <style type="text/css">
+    header{
+      margin-top: 30px;
+    }
+  </style>
+<?php endif; ?>
+
 </head>
 <body>
     
+
+<?php if(is_front_page()): ?>    
 <!-- BARRA TOP -->
 <div class="barra-top">
   <div class="container visible-sm visible-xs">
@@ -71,6 +81,9 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
   </div>
 </div>
 <!-- BARRA TOP -->
+<?php endif; ?>
+
+
 <?php 
 
 // CARREGAR MENUS
@@ -116,9 +129,10 @@ $menu_items = wp_get_nav_menu_items("principal");
             </p>
             <p>&nbsp;</p>
             <p class="social">
+              <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
               <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+              <a href="http://www.carolsantini.com.br/carrinho/"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </p>
 
 </div>
@@ -126,7 +140,7 @@ $menu_items = wp_get_nav_menu_items("principal");
 
 
 <!-- HEADER -->
-<header class="wow fadeInUp">
+<header>
   <div class="container">
     <div class="row">
 
@@ -150,9 +164,14 @@ $menu_items = wp_get_nav_menu_items("principal");
             endwhile;
             ?>
             <span>|</span>
-            <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            
+            
+            <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" class="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a href="http://www.carolsantini.com.br/carrinho/" class="carrinho"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            
+
           </div>
       <!-- MENU -->
 
