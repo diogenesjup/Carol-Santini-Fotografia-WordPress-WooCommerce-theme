@@ -38,7 +38,7 @@ $menu_items = wp_get_nav_menu_items("footer");
 <footer>
      <div class="container">
           <div class="row">
-               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-1">
+               <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 coluna-1">
                     &copy; <?php echo date("Y"); ?> Carol Santini
                     <span>&nbsp;</span>                    
 
@@ -53,7 +53,7 @@ $menu_items = wp_get_nav_menu_items("footer");
                     ?>
 
                </div>
-               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-2">
+               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 coluna-2">
 
                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
@@ -69,9 +69,11 @@ $menu_items = wp_get_nav_menu_items("footer");
 <!-- RODAPE -->
     
     <?php if(!is_page("finalizar-compra")): ?>
-    
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/bootstrap.min.js"></script>                                  
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>  
+
+    
 
      <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/sweetalert2.min.js"></script> 
      <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/wow.min.js"></script>
@@ -83,9 +85,15 @@ $menu_items = wp_get_nav_menu_items("footer");
     <script type="text/javascript">
     jQuery(document).ready(function ($) {      
  
+
           $(".owl").owlCarousel({
          
-              navigation : false, // Show next and prev buttons
+              navigation : true, // Show next and prev buttons
+              //navigation:true,
+              //navigationText: [
+              //"<",
+              //">"
+              //],
               slideSpeed : 300,
               paginationSpeed : 400,
               singleItem:true,
@@ -94,12 +102,48 @@ $menu_items = wp_get_nav_menu_items("footer");
               autoPlayHoverPause:false
          
           });         
+
+          $(".owl-prev").html('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+          $(".owl-next").html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
       
     });    
+
+
+      
+    
     </script>
     <?php endif; ?>
+
+    <?php if(is_page("contato")): ?>
+    
+    <script type="text/javascript">
+      
+
+      // SCRIPT FORMULÁRIO DE CONTATO
+            var ajaxSubmit = function(form) {                
+                var url = $(form).attr('action');
+                var flag = 9;              
+                var data = $(form).serializeArray();
+              
+                $.ajax({
+                    url: url,
+                    data: data,
+                    dataType: 'json',
+                    type:'POST'
+                });
+             
+                swal("Obrigado!", 'Sua mensagem foi enviada com sucesso', "success");
+                         
+                return false;
+            }
+      
+
+    </script>
+    <?php endif; ?>
+    
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <?php wp_footer(); ?>
+
 </body>
 </html>
