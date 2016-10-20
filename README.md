@@ -1,4 +1,25 @@
-# Carol-Santini-Fotografia-WordPress-WooCommerce-theme
+# Carol Santini Fotografia WordPress/WooCommerce theme
 Tema WordPress do site https://www.carolsantini.com.br/
+
+<img src="https://www.carolsantini.com.br/capa-site.jpg" />
+
+Tema desenvolvido por: Diogenes Junior contato@diogenesjunior.com.br
+
+Plugins utilizados:
+
++ WooCommerce
++ Woo Gerencianet Oficial
++ WooCommerce Correios
++ WooCommerce MultiStep Checkout
++ Visual Composer
++ Composium - Visual Composer Extensions Addon
++ Advance Custom Fields
++ Advance Custom Fields Repeat Field
++ Worldfence
++ Owl Carrousel
++ Breadcrumb NavXT
++ Captcha by BestWebSoft
++ Crafty Social Buttons
++ Regenerate Thumbnails
 
 
