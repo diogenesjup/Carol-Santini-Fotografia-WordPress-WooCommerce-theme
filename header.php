@@ -54,11 +54,17 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 
 <?php wp_head(); ?>
-
+<style type="text/css">
+  
+.wizard>.steps .done a, .wizard>.steps .done a:active, .wizard>.steps .done a:hover {
+    background: #efefef !important;
+    color: #000 !important;
+}
+</style>
 <?php if(!is_front_page()): ?> 
   <style type="text/css">
     header{
-      margin-top: 30px;
+      margin-top: 18px;
     }
   </style>
 <?php endif; ?>
@@ -66,7 +72,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 <?php if(is_front_page()): ?> 
   <style type="text/css">
     header{
-      padding-top: 18px;
+      padding-top: 0px;
       padding-bottom: 14px;
     }
 
@@ -116,9 +122,24 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
       display: none !important;
     }
   }
+
+  ul.products {
+    margin-top: 41px !important;
+}
+
+
   </style>
 <?php endif; ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-85966703-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
     
@@ -132,7 +153,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
         <form method="get" action="/">
                        <div id="custom-search-input" style="margin-right:-12%;">
                             <div class="input-group">                            
-                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="Pesquisa" />
+                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="exemplo: Azul, Parques..." />
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="submit">
                                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -170,7 +191,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
         <form method="get" action="/">
                        <div id="custom-search-input" style="margin-right:-12%;">
                             <div class="input-group">                            
-                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="Pesquisa" />
+                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="exemplo: Azul, Parques..." />
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="submit">
                                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -247,12 +268,12 @@ $menu_items = wp_get_nav_menu_items("principal");
               <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
               <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-              <a href="http://www.carolsantini.com.br/carrinho/"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+              <a href="https://www.carolsantini.com.br/carrinho/"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </p>
             <form method="get" action="/">
                        <div id="custom-search-input">
                             <div class="input-group">                            
-                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="Pesquisa" />
+                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="exemplo: Azul, Parques..." />
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="submit">
                                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -274,7 +295,7 @@ $menu_items = wp_get_nav_menu_items("principal");
 
         <!-- LOGO -->
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 logo">
-        <a href="#">
+        <a href="https://www.carolsantini.com.br">
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Carol Santini Logo">
         </a>
       </div>
@@ -294,13 +315,12 @@ $menu_items = wp_get_nav_menu_items("principal");
             <span>|</span>
             
             
-            <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#" target="_blank" class="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-            <a href="http://www.carolsantini.com.br/carrinho/" class="carrinho"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/carolsantiniphotographer" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/carolsantini/" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/carol_santini" target="_blank" class="pinterest"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.carolsantini.com.br/carrinho/" class="carrinho"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
-            
-            
+                       
 
           </div>
       <!-- MENU -->

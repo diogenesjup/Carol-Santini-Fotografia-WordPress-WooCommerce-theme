@@ -46,20 +46,22 @@ $menu_items = wp_get_nav_menu_items("footer");
                     $numero_menu = 0;
                     while($numero_menu<$total_menu):            
                     ?>            
-                      <a href="<?php echo $url[$numero_menu]; ?>"><?php echo $title[$numero_menu]; ?></a> <span>|</span>
+                      <a href="<?php echo $url[$numero_menu]; ?>"><?php echo $title[$numero_menu]; ?></a> 
                     <?php             
                     $numero_menu++;
                     endwhile;
                     ?>
+                    <span>|</span>
+                    <a href="mailto:contato@carolsantini.com.br">contato@carolsantini.com.br</a>
 
                </div>
                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 coluna-2">
 
-               <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+               <a href="https://www.facebook.com/carolsantiniphotographer" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
-                <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/carolsantini/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                
-               <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+               <a href="https://twitter.com/carol_santini" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
 
                </div>
