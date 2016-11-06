@@ -83,7 +83,7 @@
       </div>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <hr />
+      
     </div>
   </div>
 </div>
@@ -93,7 +93,7 @@
 <div class="container chamadas-categorias">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2>MAIS VENDIDOS</h2>
+        <h2 style="margin-top:62px;">MAIS VENDIDOS</h2>
       </div>
     </div>
 

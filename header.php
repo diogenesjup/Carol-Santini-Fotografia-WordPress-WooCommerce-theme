@@ -52,6 +52,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 
 <!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
 
 <?php wp_head(); ?>
 <style type="text/css">
@@ -171,9 +172,10 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
   <div class="container visible-sm visible-xs">
     <div class="row">
       <div class="col-sm-12 col-xs-12 text-right">
-        <span onclick="$('#menuMobile').fadeIn('500');">
+       <!-- <span onclick="$('#menuMobile').fadeIn('500');">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </span>
+        -->
       </div>
     </div>
   </div>
@@ -209,9 +211,9 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
   <div class="container visible-sm visible-xs">
     <div class="row">
       <div class="col-sm-12 col-xs-12 text-right">
-        <span onclick="$('#menuMobile').fadeIn('500');">
+      <!--  <span onclick="$('#menuMobile').fadeIn('500');">
           <i class="fa fa-bars" aria-hidden="true"></i>
-        </span>
+        </span> -->
       </div>
     </div>
   </div>
@@ -295,9 +297,12 @@ $menu_items = wp_get_nav_menu_items("principal");
 
         <!-- LOGO -->
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 logo">
+        <!-- 
         <a href="https://www.carolsantini.com.br">
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Carol Santini Logo">
         </a>
+        -->
+        <h2><a href="https://www.carolsantini.com.br">CAROL SANTINI <br><small>PHOTOGRAPHER</small></a></h2>
       </div>
       <!-- LOGO -->
 

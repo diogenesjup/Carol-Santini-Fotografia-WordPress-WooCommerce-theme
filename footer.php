@@ -69,6 +69,26 @@ $menu_items = wp_get_nav_menu_items("footer");
      </div>
 </footer>
 <!-- RODAPE -->
+
+
+<!-- BARRA DE NAVEGAÇÃO MOBILE -->
+<div class="barra-navegacao hidden-lg hidden-md hidden-sm">
+  <div class="row">
+    <div class="col-xs-3 coluna-barra">
+      <a href="https://www.carolsantini.com.br/"><i class="fa fa-home fa-2x" aria-hidden="true"></i><br><span>Início</span></a>
+    </div>
+    <div class="col-xs-3 coluna-barra">
+      <a href="https://www.carolsantini.com.br/shop/"><i class="fa fa-heart fa-2x" aria-hidden="true"></i><br><span>Loja</span></a>
+    </div>
+    <div class="col-xs-3 coluna-barra">
+      <a href="https://www.carolsantini.com.br/carrinho/"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><br><span>Carrinho</span></a>
+    </div>
+    <div class="col-xs-3 coluna-barra">
+      <a onclick="$('#menuMobile').fadeIn('500');"><i class="fa fa-bars fa-2x" aria-hidden="true"></i><br><span>Mais</span></a>
+    </div>
+  </div>
+</div>
+<!-- BARRA DE NAVEGAÇÃO MOBILE -->
     
     <?php if(!is_page("finalizar-compra")): ?>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-2.1.4.js"></script>

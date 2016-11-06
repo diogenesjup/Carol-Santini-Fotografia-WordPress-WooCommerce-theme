@@ -26,3 +26,23 @@ function custom_woocommerce_product_add_to_cart_text( $text ) {
 	return __( 'Comprar' );
 }
 add_filter( 'woocommerce_product_add_to_cart_text', 'custom_woocommerce_product_add_to_cart_text' );
+
+
+// NUMERO DE PRODUTOS POR PÁGINA NO WOOCOMMERCE
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
+
+
+// CLASSE DOS CAMPOS DO WOOCOMMERCE CARREGAREM ESTILOS BOOTSTRAP
+add_filter('woocommerce_checkout_fields', 'addBootstrapToCheckoutFields' );
+function addBootstrapToCheckoutFields($fields) {
+    foreach ($fields as &$fieldset) {
+        foreach ($fieldset as &$field) {
+            // if you want to add the form-group class around the label and the input
+            //$field['class'][] = 'form-group'; 
+
+            // add form-control to the actual input
+            $field['input_class'][] = 'form-control';
+        }
+    }
+    return $fields;
+}
