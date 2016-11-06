@@ -22,4 +22,9 @@ Plugins utilizados:
 + Crafty Social Buttons
 + Regenerate Thumbnails
 
+# Novidades da Versão 1.2
 
++ Melhorias no design: alinhamentos e disposição melhoradas;
++ Melhorias na UX: navegação mobile aprimorada para aumento de conversão e melhoria da experiência do usuário;
+
+<img src="https://www.carolsantini.com.br/mobile.jpeg" />
