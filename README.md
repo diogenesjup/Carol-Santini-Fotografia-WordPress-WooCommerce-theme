@@ -28,3 +28,14 @@ Plugins utilizados:
 + Melhorias na UX: navegação mobile aprimorada para aumento de conversão e melhoria da experiência do usuário;
 
 <img src="https://www.carolsantini.com.br/mobile.jpeg" />
+
+# Novidades da versão 1.3
+
++ Melhorias e atualizações no design
++ Melhorias na UX
++ Número de produtos por linha alterado de 4 para 3
++ Ajustes nos alinhamentos
++ Compatibilidade com a versão >4.8 do WordPress
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jFeh3-R-eM0" frameborder="0" allowfullscreen></iframe>
+
