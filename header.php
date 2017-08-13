@@ -39,7 +39,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.css" media="all" />                   
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css?v=2" />
 <link rel="stylesheet" type="text/css" media="(max-width: 900px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/mobile.css" />
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/sweetalert2.min.css">    
@@ -61,6 +61,12 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
     background: #efefef !important;
     color: #000 !important;
 }
+
+
+
+
+
+
 </style>
 <?php if(!is_front_page()): ?> 
   <style type="text/css">
@@ -129,8 +135,33 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 }
 
 
+
+
   </style>
 <?php endif; ?>
+<style type="text/css">
+  @media(min-width: 980px){
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+      float: left;
+      margin: 0 3.2% 2.992em 0;
+      padding: 0;
+      position: relative;
+      width: 30% !important;
+  }
+    .woocommerce .products ul, .woocommerce ul.products {
+      margin: 0 0 1em;
+      padding: 0;
+      list-style: none;
+      clear: both;
+      width: 104%;
+  }
+}
+.owl-controls .owl-page, .owl-controls .owl-buttons div {
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+</style>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -154,7 +185,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
         <form method="get" action="/">
                        <div id="custom-search-input" style="margin-right:-12%;">
                             <div class="input-group">                            
-                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="exemplo: Azul, Parques..." />
+                                <input type="text" class="search-query form-control input-sm" name="s" placeholder=" cor/palavra-chave" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="submit">
                                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -193,7 +224,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
         <form method="get" action="/">
                        <div id="custom-search-input" style="margin-right:-12%;">
                             <div class="input-group">                            
-                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="exemplo: Azul, Parques..." />
+                                <input type="text" class="search-query form-control input-sm" name="s" placeholder=" cor/palavra-chave" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="submit">
                                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -275,7 +306,7 @@ $menu_items = wp_get_nav_menu_items("principal");
             <form method="get" action="/">
                        <div id="custom-search-input">
                             <div class="input-group">                            
-                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="exemplo: Azul, Parques..." />
+                                <input type="text" class="search-query form-control input-sm" name="s" placeholder="cor/palavra-chave" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="submit">
                                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -296,18 +327,18 @@ $menu_items = wp_get_nav_menu_items("principal");
     <div class="row">
 
         <!-- LOGO -->
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 logo">
-        <!-- 
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 logo">
+         
         <a href="https://www.carolsantini.com.br">
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Carol Santini Logo">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo3.png?v=2" alt="Carol Santini Logo">
         </a>
-        -->
-        <h2><a href="https://www.carolsantini.com.br">CAROL SANTINI <br><small>PHOTOGRAPHER</small></a></h2>
+        
+        <!--<h2><a href="https://www.carolsantini.com.br">CAROL SANTINI <br><small>PHOTOGRAPHER</small></a></h2>-->
       </div>
       <!-- LOGO -->
 
       <!-- MENU -->
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 menu-desktop visible-lg visible-md">
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 menu-desktop visible-lg visible-md">
             <?php             
             $numero_menu = 0;
             while($numero_menu<$total_menu):            

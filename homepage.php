@@ -43,7 +43,7 @@
 </div>
 <!-- SLIDESHOW -->
 
-<!-- DESTAQUES HOME -->
+<!-- DESTAQUES HOME 
 <div class="container destaques-home">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-1">
@@ -56,44 +56,46 @@
     </div>
   </div>
 </div>
-<!-- DESTAQUES HOME -->
+ DESTAQUES HOME -->
 
-<!-- NEWSLETTER -->
-<div class="container newsletter wow fadeInUp">
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <div class="caixa-newsletter">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-1">
-          <p style="line-height:1.4em;"> Coloque seu e-mail ao lado para <b>GANHAR</b> UM PDF com <u>27 dicas para harmonizar quadros na parede</u> e também ficar por dentro das novidades.</p>
-        
-        </div>
-        <div class="col-lg-1 col-md-1 hidden-sm hidden-xs coluna-2">
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow.jpg" alt="arrow">
-        </div>
-        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 coluna-3">
-          <form id="register-newsletter" class="form-inline" method="post" action="https://www.carolsantini.com.br/email.php" target="_blank">
-              <div class="form-group">
-                         <input type="email" name="newsletter" class="form-control" required placeholder="Digite seu endereço de e-mail">
-                      </div>
-                      <div class="form-group">
-                         <button type="submit" class="btn btn-custom-3">Ok</button>
-                      </div>
-                  </form>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      
-    </div>
-  </div>
-</div>
-<!-- NEWSLETTER -->
+<?php if(get_field("coluna_1_imagem")!=""): ?>
+ 
+ <div class="container" style="padding-top: 12px;">
+   <div class="row">
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+       <p>
+         <img src="<?php the_field("coluna_1_imagem"); ?>" style="width: 100%;height: auto;">
+       </p>
+       <p style="font-size: 1.2em;">
+         <?php the_field("coluna_1_texto"); ?>
+       </p>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+       <p>
+         <img src="<?php the_field("coluna_2_imagem"); ?>" style="width: 100%;height: auto;">
+       </p>
+       <p style="font-size: 1.2em;">
+         <?php the_field("coluna_2_texto"); ?>
+       </p>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+       <p>
+         <img src="<?php the_field("coluna_3_imagem"); ?>" style="width: 100%;height: auto;">
+       </p>
+       <p style="font-size: 1.2em;">
+         <?php the_field("coluna_3_texto"); ?>
+       </p>
+     </div>
+   </div>
+ </div>
+<?php endif; ?>
+
 
 <!-- CHAMADA CATEGORIAS -->
 <div class="container chamadas-categorias">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2 style="margin-top:62px;">MAIS VENDIDOS</h2>
+        <h2 style="margin-top:62px;">DESTAQUES</h2>
       </div>
     </div>
 
@@ -129,11 +131,43 @@
   </div>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-       <?php echo do_shortcode('[recent_products per_page="4" columns="4"]'); ?>
+       <?php echo do_shortcode('[recent_products per_page="21" columns="3"]'); ?>
     </div>
   </div>
 </div>
 <!-- CHAMADAS CATEGORIAS -->
+
+
+<!-- NEWSLETTER -->
+<div class="container newsletter wow fadeInUp">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="caixa-newsletter">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-1">
+          <p style="line-height:1.4em;"> Coloque seu e-mail ao lado para <b>GANHAR</b> UM PDF com <u>27 dicas para harmonizar quadros na parede</u> e também ficar por dentro das novidades.</p>
+        
+        </div>
+        <div class="col-lg-1 col-md-1 hidden-sm hidden-xs coluna-2">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow.jpg" alt="arrow">
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 coluna-3">
+          <form id="register-newsletter" class="form-inline" method="post" action="https://www.carolsantini.com.br/email.php" target="_blank">
+              <div class="form-group">
+                         <input type="email" name="newsletter" class="form-control" required placeholder="Digite seu endereço de e-mail">
+                      </div>
+                      <div class="form-group">
+                         <button type="submit" class="btn btn-custom-3">Ok</button>
+                      </div>
+                  </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      
+    </div>
+  </div>
+</div>
+<!-- NEWSLETTER -->
 
 <?php endwhile; endif; ?>
 

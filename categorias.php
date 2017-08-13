@@ -52,8 +52,8 @@
                     $image = wp_get_attachment_url( $thumbnail_id );
 
           ?>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 coluna-1" onclick="location.href='<?php echo esc_attr(get_term_link($tax_term, $taxonomy)); ?>';">
-            <div class="caixa-categoria" style="background:url('<?php echo $image; ?>') no-repeat;background-size:cover;background-position:center center;">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 coluna-1" onclick="location.href='<?php echo esc_attr(get_term_link($tax_term, $taxonomy)); ?>';">
+            <div class="caixa-categoria" style="background:url('<?php echo $image; ?>') no-repeat;background-size:100% auto;background-position:center center;">
               &nbsp;
             </div>
           <a style="color:#212121;" href="<?php echo esc_attr(get_term_link($tax_term, $taxonomy)); ?>" class="cat-in-header" data-toggle="tooltip" data-placement="top" title="<?php echo $tax_term->name; ?>" style="text-decoration:none !important;">
