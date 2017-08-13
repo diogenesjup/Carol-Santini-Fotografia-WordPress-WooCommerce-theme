@@ -37,5 +37,5 @@ Plugins utilizados:
 + Ajustes nos alinhamentos
 + Compatibilidade com a versão >4.8 do WordPress
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jFeh3-R-eM0" frameborder="0" allowfullscreen></iframe>
+https://www.youtube.com/embed/jFeh3-R-eM0
 
